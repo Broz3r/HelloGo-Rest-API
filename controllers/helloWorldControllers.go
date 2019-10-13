@@ -4,6 +4,7 @@ import (
 	"broz3r.com/HelloGo_Rest-API/models"
 	"broz3r.com/HelloGo_Rest-API/net"
 	"net/http"
+	"time"
 )
 
 // Get Init godoc
@@ -21,6 +22,7 @@ import (
 func HelloWorld(w http.ResponseWriter, r *http.Request) {
 	resp := models.HelloWorld {
 		Value: "Hello World !",
+		Date: time.Now().UTC(),
 	}
 	net.Respond(w, resp)
 }
