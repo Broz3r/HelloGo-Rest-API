@@ -12,7 +12,7 @@ func main() {
 
 	router := mux.NewRouter()
 
-	router.HandleFunc("/helloworld", controllers.HelloWorld).Methods("GET")
+	router.HandleFunc("/api/helloworld", controllers.HelloWorld).Methods("GET")
 	router.Use(net.Logger)
 
 	port := "9000"
