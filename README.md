@@ -4,4 +4,4 @@ A Rest API server returning an Hello World object with the current UTC Date on t
 
 The server is running on port 9000.
 
-You can try it with https://helloworld.broz3r.com/api/helloworld.
+You can use it with the following GET : https://api.broz3r.com/helloworld
